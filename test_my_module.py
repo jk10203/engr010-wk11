@@ -22,3 +22,7 @@ def test_generate_plot_runs(monkeypatch):
 
     xvals = np.linspace(-10, 10, 100)
     mm.generate_plot(square, xvals)  #run without error
+
+
+def test_positive_palindrome():
+    assert mm.is_palindrome(121) is True

@@ -37,3 +37,9 @@ def two_sum(nums, target):
             return [seen[diff], i]
         seen[num] = i
     return None  #in case there's no valid pair
+
+def is_palindrome(x: int) -> bool:
+    if x < 0:
+        return False  #neg numbers can NOT be palindromes
+    return str(x) == str(x)[::-1]
+
